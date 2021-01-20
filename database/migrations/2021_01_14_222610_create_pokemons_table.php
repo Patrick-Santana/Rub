@@ -17,7 +17,8 @@ class CreatePokemonsTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('tipo');
-            $table->string('status');
+            $table->integer('iv');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

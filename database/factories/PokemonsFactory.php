@@ -23,6 +23,10 @@ class PokemonsFactory extends Factory
     {
         return [
             //
+
+            'nome' => $this->faker->word,
+            'tipo' => $this->faker->word,
+            'iv'   => $this->faker->numberBetween(0,100),
         ];
     }
 }

@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Treinadores extends Model
 {
     use HasFactory;
+
+    public function pokemons(){
+        return $this->hasMany(Pokemons::class);
+    }
 }
